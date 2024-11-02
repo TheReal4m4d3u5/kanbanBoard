@@ -2,10 +2,13 @@
 import { UserLogin } from "../interfaces/UserLogin";
 
 
+// This function attempts to log a user in by:
+// Sending a POST request with their credentials.
+// Checking if the response is successful.
+// Returning a token if successful or handling errors if not.
+
 //Defines the structure of the response we expect from the server after a successful login. This response will include a token string.
 interface LoginResponse { token: string; }
-
-
 
 // Defines an asynchronous login function that takes userInfo (an object with username and password) as an argument. 
 // This function will attempt to log the user in by making a POST request to the login API.
