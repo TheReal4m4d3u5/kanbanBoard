@@ -1,5 +1,6 @@
 import { JwtPayload, jwtDecode } from 'jwt-decode';
 
+
 class AuthService {
   getProfile() {
     // TODO: return the decoded token
@@ -35,6 +36,7 @@ class AuthService {
     localStorage.setItem('token', idToken);
     window.location.assign('/'); // Redirect to home page
   }
+  
 
   logout() {
     // TODO: remove the token from localStorage
