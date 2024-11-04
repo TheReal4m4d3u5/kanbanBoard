@@ -1,5 +1,5 @@
 const forceDatabaseRefresh = false;
-
+import cors from "cors"
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -14,6 +14,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.static('../client/dist'));
 
 app.use(express.json());
+app.use(cors());
 app.use(routes);
 
 sequelize.sync({force: forceDatabaseRefresh}).then(() => {
