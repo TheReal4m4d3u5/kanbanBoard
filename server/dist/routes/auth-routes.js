@@ -17,7 +17,7 @@ export const login = async (req, res) => {
             return res.status(401).json({ message: 'Invalid username or password' });
         }
         // Generate a JWT token
-        const token = jwt.sign({ userId: user.id, username: user.username }, process.env.JWT_SECRET_KEY, { expiresIn: '10s' });
+        const token = jwt.sign({ userId: user.id, username: user.username }, process.env.JWT_SECRET_KEY, { expiresIn: '5m' });
         // Respond with the token
         return res.json({ token });
     }
