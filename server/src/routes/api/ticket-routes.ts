@@ -11,8 +11,6 @@ import {
 
 
 
-
-
 const router = express.Router();
 
 // GET /tickets - Get all tickets
