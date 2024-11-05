@@ -7,6 +7,12 @@ import {
   deleteTicket,
 } from '../../controllers/ticket-controller.js';
 
+
+
+
+
+
+
 const router = express.Router();
 
 // GET /tickets - Get all tickets
