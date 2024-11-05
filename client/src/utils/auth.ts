@@ -1,8 +1,27 @@
 import { JwtPayload, jwtDecode } from 'jwt-decode';
 
 
-class AuthService {
 
+// let inactivityTimeout: NodeJS.Timeout;
+// const refreshThreshold = 240000; // 4 minutes in milliseconds
+
+// function resetInactivityTimer() {
+//   clearTimeout(inactivityTimeout);
+//   inactivityTimeout = setTimeout(() => {
+//     alert("You've been inactive. Please log in again.");
+//     // Logout the user or request a new token here
+//   }, refreshThreshold);
+// }
+
+// // Attach to user activity events
+// window.addEventListener('mousemove', resetInactivityTimer);
+// window.addEventListener('keydown', resetInactivityTimer);
+
+// // Initialize the timer on page load
+// resetInactivityTimer();
+
+
+class AuthService {
 
   constructor(){
     this.autoLogoutOnTokenExpiry();
