@@ -2,6 +2,12 @@ import { JwtPayload, jwtDecode } from 'jwt-decode';
 
 
 class AuthService {
+
+
+  constructor(){
+    this.autoLogoutOnTokenExpiry();
+  }
+
   getProfile() {
     // TODO: return the decoded token
     const token = this.getToken();
@@ -24,6 +30,19 @@ class AuthService {
       return true;
     }
   }
+
+  autoLogoutOnTokenExpiry(){
+    const token = this.getToken();
+    if(!token) return;
+
+    setInterval(() =>{
+      if (this.isTokenExpired(token)){
+        this.logout();
+      }
+      console.log("here");
+    }, 5000);
+  }
+
 
   getToken(): string | null {
     // TODO: return the token

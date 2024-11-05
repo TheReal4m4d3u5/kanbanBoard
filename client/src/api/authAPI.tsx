@@ -16,7 +16,7 @@ const login = async (userInfo: UserLogin) => {
   // TODO: make a POST request to the login route
 
   try {
-    debugger
+
     //Makes a POST request to the /api/auth/login endpoint, sending the user’s login data (userInfo)
     const response = await fetch('/auth/login', {
 

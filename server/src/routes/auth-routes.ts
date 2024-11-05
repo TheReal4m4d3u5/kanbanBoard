@@ -1,7 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { User } from '../models/user.js';
 import jwt from 'jsonwebtoken';
-const bcrypt = require('bcryptjs');
+import bcrypt from 'bcrypt';
+
 
 export const login = async (req: Request, res: Response) => {
   // TODO: If the user exists and the password is correct, return a JWT token
@@ -26,8 +27,10 @@ export const login = async (req: Request, res: Response) => {
     const token = jwt.sign(
       { userId: user.id, username: user.username },
       process.env.JWT_SECRET_KEY as string,
-      { expiresIn: '1h' }
+      { expiresIn: '10s' }
     );
+
+
 
     // Respond with the token
    return res.json({ token });
@@ -37,6 +40,7 @@ export const login = async (req: Request, res: Response) => {
   }
 
 };
+
 
 const router = Router();
 
