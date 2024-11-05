@@ -1,4 +1,4 @@
-# WeatherAPP
+## Kanban Board
 
    
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
@@ -25,7 +25,7 @@ This project is to create a weather app that sends weather data to a client serv
 
 ## Table of Contents  
 
-[WeatherAPP](#weatherapp)
+[KanbanBoard](#kanban board)
 
 [Description](#description)
 
