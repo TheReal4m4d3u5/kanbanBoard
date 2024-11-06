@@ -3,9 +3,9 @@
    
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
 
-Link to deployed Site 
+Link to deployed site and screenshots 
 
-[https://weatherapp-ew0q.onrender.com ](https://kanbanboard-552l.onrender.com)
+[(https://kanbanboard-552l.onrender.com)](https://kanbanboard-552l.onrender.com/)
 
 
 ![alt text](image.png)
