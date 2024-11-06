@@ -2,9 +2,6 @@ import { JwtPayload, jwtDecode } from 'jwt-decode';
 
 
 
-
-
-
 let inactivityTimeout: NodeJS.Timeout;
 const refreshThreshold = 300000; // 4 minutes in milliseconds
 

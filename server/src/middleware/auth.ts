@@ -20,6 +20,15 @@ declare module 'express-serve-static-core' {
   }
 }
 
+// declare global {
+//   namespace Express {
+//     interface Request {
+//       user?: JwtPayload; // Extend Request to include a user property
+//     }
+//   }
+// }
+
+
 
 // checks if the user is allowed to access a particular part of your app by verifying their
 // token. If the token is valid, it lets the user proceed; if not, it stops them with an error.
