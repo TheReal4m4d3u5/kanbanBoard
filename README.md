@@ -18,9 +18,7 @@ Link to deployed Site
 
 ## Description 
 
-This project is to create a weather app that sends weather data to a client server and displays the current weather and the five day forcast
-
-
+This project created a full stack Kanban board with Auth
 
 
 ## Table of Contents  
@@ -117,7 +115,7 @@ set env in main deploy
 
   ## Usage  
 
-  in the terminal type node index and follow the instructions.  
+    Login using seeded credtials and create a ticket   
 
    
 
@@ -139,8 +137,15 @@ set env in main deploy
 
   ## Tests  
 
-  All the inputs should be tested, open the README.md and open in markdown preview to make sure that everything is being generated properly.  
+  Login 
 
+  Create ticket
+
+  verify ticket has been created
+
+  Do not move mouse and wait to be logged out, user is redirrected to login page
+
+  Log in and use the logout button, user is redirected to login page. 
    
   ## Questions 
 
